@@ -1,0 +1,15 @@
+my_script.sh
+ 
+#!/bin/bash
+
+#!/bin/bash/
+
+name='Jake'
+echo "Hello $names"
+echo -e "\nThis is my script.\n"
+echo -e "The files in $PWD are :\n$(ls)"
+echo -e "\nCopying the passwd file to your current director.\n"
+cp sudo /etc/passwd $PWD
+echo -e "The files in $PWD are now:\n$(ls)"
+echo " "
+echo "Have a great day!"
