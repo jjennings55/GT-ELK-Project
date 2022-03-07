@@ -92,14 +92,14 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 For ELK VM Configuration:
 -Copy the https://github.com/jjennings55/GT-ELK-Project/blob/47ef71da02be33c6e8bc34af9cc3ff511dc98d91/Ansible/install-elk.yml.txt
--Run the playbook with <ansible-playbook install-elk.yml>
+-Run the playbook with 'ansible-playbook install-elk.yml'
 
 For Filebeat
 -Download Filebeat playbook usng this command:
 -curl -L -O https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/files/filebeat-config.yml
 -Copy the '/etc/ansible/files/filebeat-config.yml' file to '/etc/filebeat/filebeat-playbook.yml'
 -Update the filebeat-playbook.yml file to include installer by running the following command <curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb>
--Update the filebeat-config.yml file at /etc/ansible/ by running the command <nano filebeat-config.yml>
+-Update the filebeat-config.yml file at /etc/ansible/ by running the command 'nano filebeat-config.yml'
 
 output.elasticsearch:
   #Array of hosts to connect to.
