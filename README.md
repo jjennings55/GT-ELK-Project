@@ -186,6 +186,6 @@ setup.kibana:
 - Run the playbook with the command 'ansible-playbook metricbeat-playbook.yml' and navigate to Kibana > Add Metric Data > Docker Metrics > Module Status to check that the installation worked as expected.
   
 Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- _Which file is the playbook? All playbook files are saved in the "Playbooks" folder  Where do you copy it? copy them to your /etc/ansible folder on your Jump Box
+- _Which file do you update to make Ansible run the playbook on a specific machine? hosts file How do I specify which machine to install the ELK server on versus which to install Filebeat on? The ELK server needs to be in a separate network, but any files you want logged needs to have Filebeat installed on the VM
+- _Which URL do you navigate to in order to check that the ELK server is running? http://[your.VM.IP]:5601/app/kibana
