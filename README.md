@@ -193,7 +193,7 @@ Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running? http://[your.VM.IP]:5601/app/kibana
 
 
-# Cheat Sheet - Cloud Security-1
+# Cheat Sheet - Cloud Security
 
 ## Key Terms
 
