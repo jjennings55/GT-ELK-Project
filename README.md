@@ -162,7 +162,7 @@ output.elasticsearch:
  setup.kibana:
   host: "10.1.0.4:5601"
 
-- Run the playbook using the command ansible-playbook filebeat-playbook.yml and navigate to Kibana > Logs : Add log data > System logs > 5:Module Status > Check data to check that the installation worked as expected.
+- Run the playbook using the command `ansible-playbook filebeat-playbook.yml` and navigate to Kibana > Logs : Add log data > System logs > 5:Module Status > Check data to check that the installation worked as expected.
 
 For METRICBEAT:
 
@@ -172,7 +172,7 @@ For METRICBEAT:
 - Update the filebeat-playbook.yml file to include installer:
  curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amd64.deb
 - Update the metricbeat file rename to metricbeat-config.yml
-- Nano metricbeat-config.yml
+- `Nano metricbeat-config.yml`
 
 output.elasticsearch:
 #Array of hosts to connect to.
@@ -183,7 +183,7 @@ hosts: ["10.1.0.4:9200"]
 setup.kibana:
   host: "10.1.0.4:5601"
 
-- Run the playbook with the command 'ansible-playbook metricbeat-playbook.yml' and navigate to Kibana > Add Metric Data > Docker Metrics > Module Status to check that the installation worked as expected.
+- Run the playbook with the command `ansible-playbook metricbeat-playbook.yml` and navigate to Kibana > Add Metric Data > Docker Metrics > Module Status to check that the installation worked as expected.
   
 Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? All playbook files are saved in the "Playbooks" folder  Where do you copy it? copy them to your /etc/ansible folder on your Jump Box
