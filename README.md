@@ -75,9 +75,11 @@ This playbook implements the following tasks:
     remote_user: azureuser
     become: true
     tasks:
+```
 
 - Install Docker and Python3-pip:
-    - name: Install docker.io
+```bash
+ - name: Install docker.io
       apt:
         force_apt_get: yes
         update_cache: yes
@@ -94,8 +96,9 @@ This playbook implements the following tasks:
       pip:
         name: docker
         state: present
-
+```
 - Increase virtual memory:
+```bash
     - name: Increase virtual memory
       command: sysctl -w vm.max_map_count=262144
 
@@ -105,7 +108,9 @@ This playbook implements the following tasks:
         value: 262144
         state: present
         reload: yes
+```
 - Establish ports to be used:
+```bash
     - name: Elk container download
       docker_container:
         name: elk
@@ -116,8 +121,10 @@ This playbook implements the following tasks:
           - 5601:5601
           - 9200:9200
           - 5044:5044
+```
 - Enable Docker on startup:
-    - name: Enable service docker on boot
+```bash   
+   - name: Enable service docker on boot
       systemd:
         name: docker
         state: started
