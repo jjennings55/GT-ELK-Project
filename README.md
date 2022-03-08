@@ -69,7 +69,8 @@ You list the tasks needed to be done by writing a playbook, and Ansible will fig
 
 This playbook implements the following tasks:
 - Specify a group of machines with a remote user:
-  - name: Configure Elk VM with Docker
+```bash
+- name: Configure Elk VM with Docker
     hosts: elk
     remote_user: azureuser
     become: true
@@ -121,7 +122,7 @@ This playbook implements the following tasks:
         name: docker
         state: started
         enabled: yes
-
+```
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 https://github.com/jjennings55/GT-ELK-Project/blob/504523048939d12d6d33457d72f8bfbb4a1c59b1/Screenshots/Elk%20Status.JPG
